@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyName</title>
+    <style>
+        .name {
+            animation: showName .6s infinite;
+        }
+
+        @keyframes showName {
+            0% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Welcome! my name is</h1>
+        <h2 class="name"></h2>
+    </section>
+
+    <script>
+        const name = "Zaynab Morolayo Bammeke"
+        let showName = document.querySelector(".name")
+
+        showName.innerHTML = name;
+
+    </script>
+</body>
+</html>
